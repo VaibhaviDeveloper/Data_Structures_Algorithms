@@ -19,9 +19,9 @@ def traverse():
     print(curr.data)
     curr=curr.next
 
-insertAtTop(10)
-insertAtTop(20)
-insertAtTop(30)
+insertAtTop("A")
+insertAtTop("B")
+insertAtTop("C")
  # traverse()
 
 def insertAtEnd(data):
@@ -35,7 +35,7 @@ def insertAtEnd(data):
       curr=curr.next
     curr.next=nn
 
-insertAtEnd(40)
+insertAtEnd("Q")
 #traverse()
 
 def insertAtPos(data,pos):
@@ -55,10 +55,30 @@ def insertAtPos(data,pos):
     nn.next=curr.next
     curr.next=nn
 
-insertAtPos(20,1)
-insertAtPos(90,0)
-insertAtPos(100,100)
-insertAtPos(100,0)
+def deleteAtTop():
+  global head
+  if head is not Node:
+    head=head.next
+
+def deleteAtEnd():
+  global head
+  if (head is not None and head.next is None):
+    head=None
+  elif (head is not None and head.next is not None):
+    curr=head
+    while (curr is not None and curr.next is not None and curr.next.next is not None):
+      curr=curr.next
+    curr.next=None
+
+
+insertAtPos("D",1)
+insertAtPos("E",0)
+insertAtPos("F",100)
+insertAtPos("G",0)
+deleteAtTop()
+deleteAtTop()
+deleteAtEnd()
+deleteAtEnd()
 traverse()
 
     
