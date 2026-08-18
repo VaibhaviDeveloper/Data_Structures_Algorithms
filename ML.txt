@@ -1,0 +1,30 @@
+scikit-learn
+│
+├── Classification
+│   ├── Logistic Regression
+│   ├── Decision Tree
+│   ├── Random Forest
+│   └── KNN
+│
+├── Regression
+│   ├── Linear Regression
+│   ├── Decision Tree
+│   └── Random Forest
+│
+├── Clustering
+│   ├── K-Means
+│   └── DBSCAN
+│
+├── Preprocessing
+│   ├── StandardScaler
+│   ├── MinMaxScaler
+│   └── OneHotEncoder
+│
+├── Model Selection
+│   └── train_test_split
+│
+└── Metrics
+    ├── accuracy
+    ├── precision
+    ├── recall
+    └── F1-score

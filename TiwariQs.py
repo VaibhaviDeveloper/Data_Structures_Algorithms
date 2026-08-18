@@ -15,7 +15,7 @@ def Sorting(a):
             j-=1
     print(i)
     print(j)
-    
+
 Sorting(a)
 print(a)
 
